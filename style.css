@@ -686,7 +686,6 @@ body {
 
 @media (max-width: 768px) {
 
-    /* NAVBAR */
     .navbarb {
         width: calc(100% - 32px);
         padding: 6px 8px;
@@ -699,7 +698,6 @@ body {
         letter-spacing: 0;
     }
 
-    /* ACCUEIL */
     #accueil {
         background-attachment: scroll;
     }
@@ -723,7 +721,6 @@ body {
         text-align: center;
     }
 
-    /* SECTION HEADERS */
     .section-header {
         padding-top: 80px;
         padding-bottom: 40px;
@@ -731,7 +728,6 @@ body {
         padding-right: 20px;
     }
 
-    /* PORTFOLIO */
     #portfolio {
         background-attachment: scroll;
         padding-bottom: 60px;
@@ -753,7 +749,6 @@ body {
         min-height: 200px;
     }
 
-    /* COMPÉTENCES */
     #compétences {
         background-attachment: scroll;
         padding-bottom: 60px;
@@ -778,7 +773,6 @@ body {
         color: #0a0a0a;
     }
 
-    /* CONTACT */
     .contact-wrapper {
         flex-direction: column;
         gap: 30px;
