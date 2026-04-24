@@ -129,6 +129,7 @@ body {
     color: #fff;
     margin: 0;
     letter-spacing: -0.02em;
+    width: 100%;
 }
 
 #accueil {
@@ -449,6 +450,7 @@ body {
     line-height: 1.8;
     color: rgba(255,255,255,0.55);
     margin: 0 0 36px;
+    width: 100%;
 }
 
 .services-list {
