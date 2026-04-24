@@ -820,4 +820,8 @@ body {
     .contact-form-placeholder {
         padding: 24px;
     }
+
+    .contact-card-val {
+        font-size: 12px;
+    }
 }
