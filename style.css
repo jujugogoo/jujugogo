@@ -539,7 +539,7 @@ body {
 #contact {
     background: #0a0a0a;
     padding-bottom: 0;
-    min-height: 50vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
 }
@@ -550,9 +550,12 @@ body {
 
 .contact-wrapper {
     display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
+    gap: 60px;
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 30px 80px;
+    flex: 1;
+    align-items: flex-start;
 }
 
 .contact-left {
@@ -578,7 +581,6 @@ body {
     display: flex;
     flex-direction: column;
     gap: 16px;
-    width: 60%;
 }
 
 .contact-card {
@@ -620,6 +622,59 @@ body {
     color: #fff;
 }
 
+.contact-right {
+    flex: 1;
+}
+
+.contact-form-placeholder {
+    background: #141414;
+    border: 1px solid rgba(255,255,255,0.07);
+    border-radius: 20px;
+    padding: 36px;
+    display: flex;
+    flex-direction: column;
+    gap: 22px;
+}
+
+.form-field {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-field label {
+    font-size: 12px;
+    letter-spacing: 0.1em;
+    text-transform: uppercase;
+    color: rgba(255,255,255,0.4);
+    font-weight: 500;
+}
+
+.fake-input {
+    height: 44px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+}
+
+.fake-textarea {
+    height: 110px;
+    background: rgba(255,255,255,0.04);
+    border: 1px solid rgba(255,255,255,0.09);
+    border-radius: 10px;
+}
+
+.form-cta {
+    margin-top: 6px;
+}
+
+.form-cta .btn-primary {
+    width: 100%;
+    text-align: center;
+    padding: 15px;
+    font-size: 15px;
+}
+
 .footer {
     border-top: 1px solid rgba(255,255,255,0.06);
     text-align: center;
@@ -627,5 +682,110 @@ body {
     color: rgba(255,255,255,0.25);
     font-size: 13px;
     letter-spacing: 0.04em;
-    margin-top: 10%;
+}
+
+@media (max-width: 768px) {
+
+    /* NAVBAR */
+    .navbarb {
+        width: calc(100% - 32px);
+        padding: 6px 8px;
+        gap: 2px;
+    }
+
+    .navtext {
+        font-size: 12px;
+        padding: 6px 10px;
+        letter-spacing: 0;
+    }
+
+    /* ACCUEIL */
+    #accueil {
+        background-attachment: scroll;
+    }
+
+    .accueilcentre {
+        padding: 0 20px;
+    }
+
+    .accueiltext {
+        font-size: 15px;
+    }
+
+    .accueil-btns {
+        flex-direction: column;
+        align-items: center;
+        width: 100%;
+    }
+
+    .btn-primary, .btn-secondary {
+        width: 100%;
+        text-align: center;
+    }
+
+    /* SECTION HEADERS */
+    .section-header {
+        padding-top: 80px;
+        padding-bottom: 40px;
+        padding-left: 20px;
+        padding-right: 20px;
+    }
+
+    /* PORTFOLIO */
+    #portfolio {
+        background-attachment: scroll;
+        padding-bottom: 60px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        padding: 0 16px;
+        gap: 16px;
+    }
+
+    .projet-card.grand {
+        grid-column: 1 / 2;
+        flex-direction: column;
+    }
+
+    .projet-card.grand .projet-img {
+        width: 100%;
+        min-height: 200px;
+    }
+
+    /* COMPÉTENCES */
+    #compétences {
+        background-attachment: scroll;
+        padding-bottom: 60px;
+    }
+
+    .competences-wrapper {
+        flex-direction: column;
+        gap: 24px;
+        padding: 0 16px;
+    }
+
+    .competences-left, .competences-right {
+        width: 100%;
+        padding: 24px;
+    }
+
+    .skill-name {
+        color: #0a0a0a;
+    }
+
+    .skill-percent {
+        color: #0a0a0a;
+    }
+
+    /* CONTACT */
+    .contact-wrapper {
+        flex-direction: column;
+        gap: 30px;
+        padding: 0 16px 60px;
+    }
+
+    .contact-form-placeholder {
+        padding: 24px;
+    }
 }
