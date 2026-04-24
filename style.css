@@ -129,7 +129,7 @@ body {
     color: #fff;
     margin: 0;
     letter-spacing: -0.02em;
-    width: 100%;
+    font-size: 30px;
 }
 
 #accueil {
@@ -446,7 +446,7 @@ body {
 }
 
 .competences-intro {
-    font-size: 10px;
+    font-size: 15px;
     line-height: 1.8;
     color: rgba(255,255,255,0.55);
     margin: 0 0 36px;
@@ -847,6 +847,8 @@ body {
         gap: 24px;
         padding: 0 16px;
     }
+
+    
 
     .competences-left, .competences-right {
         width: 100%;
