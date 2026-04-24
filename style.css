@@ -446,11 +446,10 @@ body {
 }
 
 .competences-intro {
-    font-size: 15px;
+    font-size: 10px;
     line-height: 1.8;
     color: rgba(255,255,255,0.55);
     margin: 0 0 36px;
-    width: 100%;
 }
 
 .services-list {
