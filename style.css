@@ -11,6 +11,8 @@ body {
     color: #fff;
 }
 
+/* ============ NAVIGATION ============ */
+
 .barre-navigation {
     display: flex;
     justify-content: center;
@@ -99,6 +101,8 @@ body {
     color: #fff;
 }
 
+/* ============ EN-TÊTES DE SECTION ============ */
+
 .entete-section {
     text-align: center;
     padding-top: 100px;
@@ -131,6 +135,8 @@ body {
     letter-spacing: -0.02em;
     font-size: 30px;
 }
+
+/* ============ ACCUEIL ============ */
 
 #accueil {
     display: flex;
@@ -258,6 +264,8 @@ body {
     0%, 100% { opacity: 0.3; transform: scaleY(1); }
     50% { opacity: 1; transform: scaleY(1.1); }
 }
+
+/* ============ PORTFOLIO ============ */
 
 #portfolio {
     background-color: #0a0a0a;
@@ -416,6 +424,8 @@ body {
     padding: 4px 12px;
     border-radius: 50px;
 }
+
+/* ============ COMPÉTENCES ============ */
 
 #competences {
     background: #a0a0a0;
@@ -581,6 +591,8 @@ body {
     line-height: 1.5;
 }
 
+/* ============ CONTACT ============ */
+
 #contact {
     background: #0a0a0a;
     padding-bottom: 0;
@@ -676,6 +688,8 @@ body {
     letter-spacing: 0.04em;
     margin-top: 10%;
 }
+
+/* ============ RESPONSIVE ============ */
 
 @media (max-width: 768px) {
 
