@@ -17,10 +17,10 @@
             <span></span>
         </label>
         <div class="menu-liens">
-            <a class="lien-menu" href="#accueil">accueil</a>
-            <a class="lien-menu" href="#portfolio">portfolio</a>
-            <a class="lien-menu" href="#competences">compétences</a>
-            <a class="lien-menu" href="#contact">contact</a>
+            <a class="lien-menu" href="#accueil" onclick="document.getElementById('menu-mobile-toggle').checked=false;">accueil</a>
+            <a class="lien-menu" href="#portfolio" onclick="document.getElementById('menu-mobile-toggle').checked=false;">portfolio</a>
+            <a class="lien-menu" href="#competences" onclick="document.getElementById('menu-mobile-toggle').checked=false;">compétences</a>
+            <a class="lien-menu" href="#contact" onclick="document.getElementById('menu-mobile-toggle').checked=false;">contact</a>
         </div>
     </header>
     <div id="accueil">
@@ -205,5 +205,14 @@
         </footer>
     </div>
 
+    <script>
+        // Ferme le menu burger lorsqu'on clique sur un lien de navigation
+        document.querySelectorAll('.menu-liens .lien-menu').forEach(function (lien) {
+            lien.addEventListener('click', function () {
+                var toggle = document.getElementById('menu-mobile-toggle');
+                if (toggle) toggle.checked = false;
+            });
+        });
+    </script>
 </body>
 </html>
